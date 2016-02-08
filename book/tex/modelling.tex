@@ -495,7 +495,7 @@ that linear model: \indexf{do}
 \CommentTok{#> Groups: <by row>}
 \CommentTok{#> }
 \CommentTok{#>         city     mod}
-\CommentTok{#>        (chr)  (list)}
+\CommentTok{#>        (chr)   (chr)}
 \CommentTok{#> 1    Abilene <S3:lm>}
 \CommentTok{#> 2   Amarillo <S3:lm>}
 \CommentTok{#> 3  Arlington <S3:lm>}
@@ -693,6 +693,7 @@ month value into a numeric variable:
 \StringTok{  }\NormalTok{tidyr::}\KeywordTok{extract}\NormalTok{(term, }\StringTok{"month"}\NormalTok{, }\StringTok{"(}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{d+)"}\NormalTok{, }\DataTypeTok{convert =} \OtherTok{TRUE}\NormalTok{)}
 \NormalTok{months}
 \CommentTok{#> Source: local data frame [506 x 6]}
+\CommentTok{#> Groups: city [46]}
 \CommentTok{#> }
 \CommentTok{#>       city month estimate std.error statistic  p.value}
 \CommentTok{#>      (chr) (int)    (dbl)     (dbl)     (dbl)    (dbl)}
@@ -865,7 +866,8 @@ In a real analysis, you'd want to look into these cities in more detail.
 \section*{References}
 \addcontentsline{toc}{section}{References}
 
-\hyperdef{}{ref-model-vis-paper}{\label{ref-model-vis-paper}}
+\hypertarget{refs}{}
+\hypertarget{ref-model-vis-paper}{}
 Wickham, Hadley, Dianne Cook, and Heike Hofmann. 2015. ``Visualizing
 Statistical Models: Removing the Blindfold.'' \emph{Statistical Analysis
 and Data Mining: The ASA Data Science Journal} 8 (4): 203--25.
